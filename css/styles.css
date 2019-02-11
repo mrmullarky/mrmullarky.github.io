@@ -214,6 +214,11 @@ header{
         width: 80%;
         text-align: center;
         margin: auto;
+
+    }
+
+    #about-me{
+        font-size: 18px;
     }
 
     #flex-about{
