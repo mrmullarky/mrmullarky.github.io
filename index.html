@@ -1,8 +1,9 @@
 <DOCTYPE html>
+<html lang="en">
     <head>
-        <link href="https://fonts.googleapis.com/css?family=Lato|Rubik" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
@@ -13,7 +14,7 @@
                     <a href="#connect">Connect</a>
                     <a href="#projects">Projects</a>
                     <a href="#about">About</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunc()">
+                    <a href="javascript:void(0);" class="icon" onclick="loadNav()">
                         <i class="fa fa-bars"></i>
                     </a>
                 </nav>
@@ -33,46 +34,41 @@
         <div id="about">
             <div id="flex-about">
                 <div id="img-div">
-                    <img id="me-img" src="assets/me.png" alt="photo of me">
+                    <img id="me-img" src="assets/profile.png" alt="photo of me">
                 </div>
                 <div id="about-p">
-                    <h3 id="about-h3">Hello, I'm Conor!</h3>
+                    <h1 id="about-h3">Hello, I'm Conor!</h1>
 
                     <p id="about-me">
-                        I am a frontend web developer based in the north of England. I am passionate about web development
-                        and while I currently use mainly HTML, CSS and JavaScript I am always trying to learn more, recently 
-                        experimenting with React and jQuery.
+                        I am a frontend web developer based in the north of England. I love to build websites using
+                        the best practices and take pride in my work.
+                        <br />
+                        <br />
+                        In my spare time I like to read. Sci-fi my favourite genre currently but it changes often! 
+                        I'm also crazy about films, and I try to incorporate as much travel as I can into my life.
                     </p>
                 </div>
             </div>
         </div>
         
         <div id="projects">
-            <h3 id="project-title">Here are some of the projects I'm working on...</h3>
+            <h3 id="project-title">Here are some of my previous projects</h3>
             
-            <div id="superflex">
                 <div class="flexin">
-                    <a href="https://codepen.io/mrmullarky/full/bOZedK" target="_blank">
+                    <a href="https://github.com/mrmullarky/tmdb-new-tab-extension" target="_blank">
                         <div class="project-tile">
-                            <img class="project-imgs" src="assets/tribute-page.png" alt="image of tribute page"> 
+                            <img class="project-imgs" src="assets/APINewTab.png" alt="API new tab"> 
                             <div id="caption">
-                                <p>Tribute Page</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://codepen.io/mrmullarky/full/jXRqmw" target="_blank">
-                        <div class="project-tile">
-                            <img class="project-imgs" src="assets/survey-form.png" alt="image of survey form">
-                            <div id="caption">
-                                <p>Survey Form</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://codepen.io/mrmullarky/full/OrGpJB" target="_blank">
-                        <div class="project-tile">
-                            <img class="project-imgs" src="assets/landing-page.png" alt="image of landing page">
-                            <div id="caption">
-                                <p>Landing Page</p>
+                                <h4>TMDB API Chrome Extension</h4>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                                <p>This extension replaces the new tab and pulls recent films from The Movie Database
+                                    and using their API and places them in a container where they can be selected to 
+                                    display their information in the main window.
+                                </p>
                             </div>
                         </div>
                     </a>
@@ -80,12 +76,51 @@
                         <div class="project-tile">
                             <img class="project-imgs" src="assets/todoList.png" alt="image of todo list app">
                             <div id="caption">
-                                <p>Todo List</p>
+                                <h4>Todo List</h4>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                                <p>
+                                    This app uses simple JavaScript to store values entered into the input and display them
+                                    in a list. 
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://codepen.io/mrmullarky/full/bOZedK" target="_blank">
+                        <div class="project-tile">
+                            <img class="project-imgs" src="assets/tribute-page.png" alt="image of tribute page"> 
+                            <div id="caption">
+                                <h4>Tribute Page</h4>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                </ul>
+                                <p>
+                                    This tribute page uses only HTML and CSS to organise elements on the page.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://codepen.io/mrmullarky/full/jXRqmw" target="_blank">
+                        <div class="project-tile">
+                            <img class="project-imgs" src="assets/survey-form.png" alt="image of survey form">
+                            <div id="caption">
+                                <h4>Survey Form</h4>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>    
+                                </ul>
+                                <p>
+                                    This page's main focus was organisation of elements, and playing around with divs
+                                    to make the page read better and look presentable.
+                                </p>
                             </div>
                         </div>
                     </a>
                 </div>
-            </div>
         </div>
         
         <div id="connect">
@@ -120,11 +155,12 @@
             </div>
         </div>
         
-        
+        <!--Photo by Ashkan Forouzani on Unsplash -->
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/scripting.js"></script>
 
     </body>
     </main>
-    </DOCTYPE>
+</html>
+</DOCTYPE>
