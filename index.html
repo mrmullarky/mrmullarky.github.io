@@ -9,8 +9,8 @@
 
     <main>
         <header>
-            <div class="top-container">
-                <nav id="navbar">
+            <div class="nav-container">
+                <nav class ="navbar" id="navbar">
                     <a href="#connect">Connect</a>
                     <a href="#projects">Projects</a>
                     <a href="#about">About</a>
@@ -25,23 +25,25 @@
 
     <div class="container">
         <div id="welcome-section">
-            <div id="head">
+            <div id="title-container">
                 <h1 id="title">Conor Mullarky</h1>
                 <h3 id="intro">web developer</h3>
             </div>
         </div>
 
         <div id="about">
-            <div id="flex-about">
+            <div id="about-container">
                 <div id="img-div">
-                    <img id="me-img" src="assets/profile.png" alt="photo of me">
+                    <img id="me-img" src="assets/me.png" alt="photo of me">
                 </div>
-                <div id="about-p">
-                    <h1 id="about-h3">Hello, I'm Conor!</h1>
+                <div id="description">
+                    <h2 id="about-header">Hello, I'm Conor!</h2>
 
                     <p id="about-me">
-                        I am a frontend web developer based in the north of England. I love to build websites using
-                        the best practices and take pride in my work.
+                        I am a frontend web developer based in the north of England. I love to build websites and I am 
+                        constantly learning new technologies to aid me in my passion. HTML and CSS are at the heart of my
+                        abilities, with JavaScript well on it's way. I am currently teaching myself React and hope to 
+                        have some React projects up on here soon. 
                         <br />
                         <br />
                         In my spare time I like to read. Sci-fi my favourite genre currently but it changes often! 
@@ -52,110 +54,128 @@
         </div>
         
         <div id="projects">
-            <h3 id="project-title">Here are some of my previous projects</h3>
-            
-                <div class="flexin">
-                    <a href="https://github.com/mrmullarky/tmdb-new-tab-extension" target="_blank">
+            <div class="flexRow">
+                <h2 id="project-title">Here are some of my previous projects</h2>
+            </div>
+
+            <div class="flexRow">
+                 <div class="flexCol">
+                    <a href="https://github.com/mrmullarky/quoteOfTheDayGenerator" target="_blank">
                         <div class="project-tile">
-                            <img class="project-imgs" src="assets/APINewTab.png" alt="API new tab"> 
+                            <img class="project-imgs" src="assets/qotd.png" alt="quote of the day webpage"> 
                             <div id="caption">
-                                <h4>TMDB API Chrome Extension</h4>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                </ul>
-                                <p>This extension replaces the new tab and pulls recent films from The Movie Database
-                                    and using their API and places them in a container where they can be selected to 
-                                    display their information in the main window.
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://codepen.io/mrmullarky/full/VgmxaY" target="_blank">
-                        <div class="project-tile">
-                            <img class="project-imgs" src="assets/todoList.png" alt="image of todo list app">
-                            <div id="caption">
-                                <h4>Todo List</h4>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                </ul>
+                                <h3>Quote of the Day Generator</h3>
                                 <p>
-                                    This app uses simple JavaScript to store values entered into the input and display them
-                                    in a list. 
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://codepen.io/mrmullarky/full/bOZedK" target="_blank">
-                        <div class="project-tile">
-                            <img class="project-imgs" src="assets/tribute-page.png" alt="image of tribute page"> 
-                            <div id="caption">
-                                <h4>Tribute Page</h4>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                </ul>
-                                <p>
-                                    This tribute page uses only HTML and CSS to organise elements on the page.
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://codepen.io/mrmullarky/full/jXRqmw" target="_blank">
-                        <div class="project-tile">
-                            <img class="project-imgs" src="assets/survey-form.png" alt="image of survey form">
-                            <div id="caption">
-                                <h4>Survey Form</h4>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>    
-                                </ul>
-                                <p>
-                                    This page's main focus was organisation of elements, and playing around with divs
-                                    to make the page read better and look presentable.
+                                    This quote generator pulls a quote as well as the author from the
+                                    theysaidso.com API. The page itself is basic HTML with some CSS for
+                                    design, the bulk of the work is done by the JavaScript.
                                 </p>
                             </div>
                         </div>
                     </a>
                 </div>
+                <div class="flexCol">
+                        <a href="https://github.com/mrmullarky/tmdb-new-tab-extension" target="_blank">                     
+                            <div class="project-tile">
+                                <img class="project-imgs" src="assets/APINewTab.png" alt="API new tab"> 
+                                <div id="caption">
+                                    <h3>TMDB API Chrome Extension</h3>
+                                    <p>This extension replaces the new tab and pulls recent films from The Movie Database
+                                        and using their API and places them in a container where they can be selected to 
+                                        display their information in the main window.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+            <div class="flexRow">
+                <div class="flexCol">
+                    <a href="https://codepen.io/mrmullarky/full/VgmxaY" target="_blank">
+                        <div class="project-tile">
+                            <img class="project-imgs" src="assets/todoList.png" alt="image of todo list app">
+                            <div id="caption">
+                                <h3>Todo List</h3>
+                                <p>
+                                    This todo list uses JavaScript to store values entered into the input and display them
+                                    in a list. It also has the ability to mark items as checked and can mark all items at 
+                                    once.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="flexCol">
+                    <a href="https://codepen.io/mrmullarky/full/jXRqmw" target="_blank">
+                        <div class="project-tile">
+                            <img class="project-imgs" src="assets/survey-form.png" alt="image of survey form">
+                            <div id="caption">
+                                <h3>Survey Form</h3>
+                                <p>
+                                    This page's main focus was organisation of elements, and playing around with divs
+                                    to make the page read better and look presentable. It uses HTML and CSS to achieve this.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+                
         </div>
         
         <div id="connect">
-            <div id="con-title">
+            <div id="connect-title">
                 <h2>Connect with me</h2>
             </div>
-            <div class="flex-connect">
-                <a id="profile-link" target="_blank" href="https://twitter.com/MullarkyConor">
-                    <div class="connect-link">
-                        <h3>Twitter</h3>
-                        <p>@MullarkyConor</p>
+            <div id="flex-connect">
+                <a class="profile-link" target="_blank" href="https://twitter.com/MullarkyConor">
+                    <div class="row">
+                        <div class="social-logo">
+                            <img src="assets/twitter.svg" alt="twitter logo" class="logo">
+                        </div>
+                        <div class="connect-link">
+                            <p>Twitter</p>
+                            <p class="detail">@MullarkyConor</p>
+                        </div>
+                    </div>
+
+
+                </a>
+                <a class="profile-link" target="_blank" href="https://codepen.io/mrmullarky">
+                    <div class="row">
+                        <div class="social-logo">
+                            <img src="assets/codepen.svg" alt="codepen logo" class="logo">
+                        </div>
+                        <div class="connect-link">
+                            <p>CodePen</p>
+                            <p class="detail">mrmullarky</p>
+                        </div>
                     </div>
                 </a>
-                <a id="profile-link" target="_blank" href="https://codepen.io/mrmullarky">
-                    <div class="connect-link">
-                        <h3>CodePen</h3>
-                        <p>mrmullarky</p>
+                <a class="profile-link" target="_blank" href="https://github.com/mrmullarky">    
+                    <div class="row">
+                        <div class="social-logo">
+                            <img src="assets/github.svg" alt="github logo" class="logo">
+                        </div>
+                        <div class="connect-link">
+                            <p>GitHub</p>
+                            <p class="detail">mrmullarky</p>
+                        </div>
                     </div>
                 </a>
-                <a id="profile-link" target="_blank" href="https://github.com/mrmullarky">    
-                    <div class="connect-link">
-                        <h3>GitHub</h3>
-                        <p>mrmullarky</p>
-                    </div>
-                </a>
-                <a id="profile-link" target="_blank" href="https://linkedin.com/in/conor-mullarky">
-                    <div class="connect-link">
-                        <h3>Linkedin</h3>
-                        <p>Conor Mullarky</p>
+                <a class="profile-link" target="_blank" href="https://linkedin.com/in/conor-mullarky">
+                    <div class="row">
+                        <div class="social-logo">
+                            <img src="assets/linkedin.svg" alt="linkedin logo" class="logo">
+                            </div>
+                        <div class="connect-link">
+                            <p>Linkedin</p>
+                            <p class="detail">Conor Mullarky</p>
+                        </div>
                     </div>
                 </a>
             </div>
         </div>
-        
-        <!--Photo by Ashkan Forouzani on Unsplash -->
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/scripting.js"></script>

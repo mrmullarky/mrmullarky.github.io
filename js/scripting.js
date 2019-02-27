@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    /*
     var div1 = $('#welcome-section').offset().top;
     var div2 = $('#about').offset().top;
     var div3 = $('#projects').offset().top;
@@ -8,7 +9,7 @@ $(document).ready(function(){
         $(document).scroll(function(){
             var scrollPos = $(document).scrollTop();
             if(scrollPos >= div1 && scrollPos < div2){
-                $('#navbar').css("background-color", "rgb(106, 181, 101, 1)");
+                $('#navbar').css("background-color", "rgb(20, 160, 202, 1)");
             } else if(scrollPos >= div2 && scrollPos < div3){
                 $('#navbar').css("background-color", "rgb(122, 211, 116, 1)");
             } else if(scrollPos >= div3 && scrollPos < div4){
@@ -21,7 +22,7 @@ $(document).ready(function(){
         $(document).scroll(function(){
             var scrollPos = $(document).scrollTop();
             if(scrollPos >= div1 && scrollPos < div2){
-                $('#navbar').css("background-color", "rgb(106, 181, 101, 0.5)");
+                $('#navbar').css("background-color", "rgb(20, 160, 202, 0.5)");
             } else if(scrollPos >= div2 && scrollPos < div3){
                 $('#navbar').css("background-color", "rgb(122, 211, 116, 0.5)");
             } else if(scrollPos >= div3 && scrollPos < div4){
@@ -30,16 +31,16 @@ $(document).ready(function(){
                 $('#navbar').css("background-color", '#f48f42');
             }
         });
-    }
+    }*/
 
 
 });
 
 loadNav = () => {
-    var x = document.getElementById("navbar");
-    if (x.className === "navbar") {
-      x.className += " responsive";
+    var nav = document.getElementById("navbar");
+    if (nav.className === "navbar") {
+      nav.className += " responsive";
     } else {
-      x.className = "navbar";
+      nav.className = "navbar";
     }
   }
