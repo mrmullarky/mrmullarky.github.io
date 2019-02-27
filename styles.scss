@@ -150,6 +150,8 @@ header{
     text-align: center;
     display: flex;
     flex-direction: column;
+    width: 80%;
+    margin: auto;
 
     a{
         text-decoration: none;
@@ -163,11 +165,8 @@ header{
         padding: 30px;
         font-size: 1.5em; //////////////////////////////////////
         width: 80%;
-    }
-
-    .flexin{
-        display: flex;
-        flex-direction: column;
+        text-align: center;
+        margin: auto;
     }
 
     .project-imgs{
@@ -281,11 +280,7 @@ header{
         #img-div{
             width: 40%;
             padding-top: 0%;
-        }
-        #project-title{
-            margin: auto;
-            text-align: center;
-        }
+        } 
 
         #projects{
             display: flex;
